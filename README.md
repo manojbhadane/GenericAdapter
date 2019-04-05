@@ -39,6 +39,13 @@ dependencies
 
 # Usage
 
+1. In App level build.gradle 
+```
+dataBinding {
+        enabled true
+}
+```
+2. In Activity/Fragment
 ```
  mDataBinding.recylerview.setAdapter(new GenericAdapter<PeopleModel, ListitemMainBinding>(this, arrayList) {
             @Override
