@@ -56,7 +56,8 @@ dependencies
             public void onItemClick(PeopleModel model, int position) {
 
             }
-        });```
+        });
+```
 
 # Bugs or Requests
 
