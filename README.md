@@ -33,12 +33,19 @@ allprojects
 ```
 dependencies 
 {
- 	implementation 'com.github.manojbhadane:GenericAdapter:v1.0'
+	 implementation 'com.github.manojbhadane:GenericAdapter:v1.0'
 }
 ```
 
 # Usage
 
+1. In App level build.gradle 
+```
+dataBinding {
+        enabled true
+}
+```
+2. In Activity/Fragment
 ```
  mDataBinding.recylerview.setAdapter(new GenericAdapter<PeopleModel, ListitemMainBinding>(this, arrayList) {
             @Override
