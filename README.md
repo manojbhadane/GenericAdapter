@@ -33,7 +33,7 @@ allprojects
 ```
 dependencies 
 {
-	 implementation 'com.github.manojbhadane:GenericAdapter:v1.0'
+	 implementation 'com.github.manojbhadane:GenericAdapter:v1.1'
 }
 ```
 
@@ -45,7 +45,7 @@ dataBinding {
         enabled true
 }
 ```
-2. In Activity/Fragment
+2. In Activity/Fragment (Java)
 ```
  mDataBinding.recylerview.setAdapter(new GenericAdapter<PeopleModel, ListitemMainBinding>(this, arrayList) {
             @Override
@@ -64,6 +64,27 @@ dataBinding {
 
             }
         });
+```
+3. In Activity/Fragment (Kotlin)
+```
+ var adapter = object : GenericAdapter<PeopleModel, ListitemMainBinding>(this, arrayList) {
+            override fun getLayoutResId(): Int {
+                return R.layout.listitem_main
+            }
+
+            override fun onBindData(model: PeopleModel?, position: Int, dataBinding: ListitemMainBinding?) {
+                dataBinding!!.txtName.text = model.getName()
+		dataBinding!!.txtAddress.text = model.getAddress()
+            }
+
+            override fun onItemClick(model: PeopleModel?, position: Int) {
+
+            }
+        }
+	
+dataBinding.recyclerview.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+dataBinding.recyclerview.adapter = adapter
+
 ```
 
 # Bugs or Requests
