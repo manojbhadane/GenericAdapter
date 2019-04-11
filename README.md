@@ -91,7 +91,7 @@ dataBinding.recyclerview.adapter = adapter
 
 If you encounter any problems feel free to open an [issue](https://github.com/manojbhadane/GenericAdapter/issues/new?assignees=&labels=&template=bug_report.md). If you feel the library is missing a feature, please raise a [ticket](https://github.com/manojbhadane/EasyRetro/issues/new?assignees=&labels=&template=feature_request.md) on GitHub and I'll look into it. Pull request are also welcome. 
 
-### Spread Some :heart:
+# Spread Some :heart:
 [![GitHub followers](https://img.shields.io/github/followers/manojbhadane.svg?style=social&label=Follow)](https://github.com/manojbhadane)  [![Twitter Follow](https://img.shields.io/twitter/follow/manojbhadane.svg?style=social)](https://twitter.com/Manoj_bhadane) 
 
 # About The Author
