@@ -13,6 +13,9 @@ An Easy to use adapter for android
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/manojbhadane)
 <!---[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) -->
 
+# Medium 
+[Please find detail medium post here, Android Generic Adapter](https://medium.com/@manojbhadane/android-generic-recyclerview-adapter-c0024161f1bc)
+
 # Download
 
 This library is available in **jitPack** which is the default Maven repository used in Android Studio.
