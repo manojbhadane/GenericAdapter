@@ -1,4 +1,4 @@
-# GenericAdapter [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https://github.com/manojbhadane/EasyRetro)
+# GenericAdapter [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https://github.com/manojbhadane/GenericAdapter)
 
 An Easy to use adapter for android
 
