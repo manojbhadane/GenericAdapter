@@ -36,7 +36,7 @@ allprojects
 ```
 dependencies 
 {
-	 implementation 'com.github.manojbhadane:GenericAdapter:v1.1'
+	 implementation 'com.github.manojbhadane:GenericAdapter:v1.2'
 }
 ```
 
