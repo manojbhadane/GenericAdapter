@@ -1,3 +1,5 @@
+<h4 align="center">Android Library</h4>
+
 # GenericAdapter [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https://github.com/manojbhadane/GenericAdapter)
 
 An Easy to use adapter for android
@@ -6,12 +8,14 @@ An Easy to use adapter for android
 2. No need of viewholder 
 3. More readble code
 
-### Specs
-<!---[![](https://jitpack.io/v/manojbhadane/QButton.svg)](https://jitpack.io/#manojbhadane/QButton)-->
-[![API](https://img.shields.io/badge/API-16%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=16) 
-<!---[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-QButton-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7506)-->
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/manojbhadane)
-<!---[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) -->
+
+<p align="center">
+  <a target="_blank" href="https://android-arsenal.com/api?level=16"><img src="https://img.shields.io/badge/API-16%2B-orange.svg"></a>
+  <a target="_blank" href="https://jitpack.io/#manojbhadane/GenericAdapter"><img src="https://jitpack.io/v/manojbhadane/GenericAdapter.svg"></a>
+  <a target="_blank" href="https://android-arsenal.com/details/1/7607"><img src="https://img.shields.io/badge/Android%20Arsenal-GenericAdapter-brightgreen.svg?style=flat"></a>
+  <a target="_blank" href="https://paypal.me/manojbhadane" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-blue.svg" /></a>
+</p>
+
 
 # Medium 
 [Please find detail medium post here, Android Generic Adapter](https://medium.com/@manojbhadane/android-generic-recyclerview-adapter-c0024161f1bc)
