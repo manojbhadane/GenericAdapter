@@ -1,4 +1,4 @@
-# GenericAdapter [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https://github.com/manojbhadane/EasyRetro)
+# GenericAdapter [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https://github.com/manojbhadane/GenericAdapter)
 
 An Easy to use adapter for android
 
@@ -12,6 +12,9 @@ An Easy to use adapter for android
 <!---[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-QButton-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/7506)-->
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/manojbhadane)
 <!---[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) -->
+
+# Medium 
+[Please find detail medium post here, Android Generic Adapter](https://medium.com/@manojbhadane/android-generic-recyclerview-adapter-c0024161f1bc)
 
 # Download
 
@@ -91,7 +94,7 @@ dataBinding.recyclerview.adapter = adapter
 
 If you encounter any problems feel free to open an [issue](https://github.com/manojbhadane/GenericAdapter/issues/new?assignees=&labels=&template=bug_report.md). If you feel the library is missing a feature, please raise a [ticket](https://github.com/manojbhadane/EasyRetro/issues/new?assignees=&labels=&template=feature_request.md) on GitHub and I'll look into it. Pull request are also welcome. 
 
-### Spread Some :heart:
+# Spread Some :heart:
 [![GitHub followers](https://img.shields.io/github/followers/manojbhadane.svg?style=social&label=Follow)](https://github.com/manojbhadane)  [![Twitter Follow](https://img.shields.io/twitter/follow/manojbhadane.svg?style=social)](https://twitter.com/Manoj_bhadane) 
 
 # About The Author
