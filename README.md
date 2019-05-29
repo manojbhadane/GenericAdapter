@@ -100,7 +100,7 @@ dataBinding.recyclerview.adapter = adapter
 ```
 
 # v1.2
-Added list filtering capability to genericAdapter
+Added ***list filtering*** capability to genericAdapter by extending GenericFilterAdapter class
 
 Sample code of adapter with filter
 ```Java
