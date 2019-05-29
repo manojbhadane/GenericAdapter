@@ -19,7 +19,6 @@ import java.util.ArrayList;
 
 /**
  * @author manoj.bhadane manojbhadane777@gmail.com
- *
  */
 public abstract class GenericFilterAdapter<T, D> extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements Filterable {
 
@@ -77,6 +76,20 @@ public abstract class GenericFilterAdapter<T, D> extends RecyclerView.Adapter<Re
                     @Override
                     public boolean onQueryTextChange(String s) {
                         getFilter().filter(s);
+                        return false;
+                    }
+                });
+            } else if (getSearchField() instanceof androidx.appcompat.widget.SearchView) {
+                ((androidx.appcompat.widget.SearchView) getSearchField()).setOnQueryTextListener(new androidx.appcompat.widget.SearchView.OnQueryTextListener() {
+                    @Override
+                    public boolean onQueryTextSubmit(String query) {
+                        getFilter().filter(query);
+                        return false;
+                    }
+
+                    @Override
+                    public boolean onQueryTextChange(String newText) {
+                        getFilter().filter(newText);
                         return false;
                     }
                 });
