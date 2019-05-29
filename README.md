@@ -17,6 +17,11 @@ An Easy to use adapter for android
 2. No need of viewholder 
 3. More readble code
 
+# Supports 2 types of adapters
+***GenericAdapter :*** Adapter for simple usage
+
+***GenericFilterAdapter :*** Adapter with list filtering capability
+
 
 # Medium 
 [Please find detail medium post here, Android Generic Adapter](https://medium.com/@manojbhadane/android-generic-recyclerview-adapter-c0024161f1bc)
@@ -27,7 +32,7 @@ This library is available in **jitPack** which is the default Maven repository u
 
 ## Gradle 
 **Step 1.** Add it in your root build.gradle at the end of repositories
-```
+```Gradle
 allprojects 
 {
 	repositories {
@@ -38,9 +43,8 @@ allprojects
 ```
 
 **Step 2.** Add the dependency in your apps module build.gradle
-```
-dependencies 
-{
+```Gradle
+dependencies {
 	 implementation 'com.github.manojbhadane:GenericAdapter:v1.2'
 }
 ```
@@ -48,13 +52,13 @@ dependencies
 # Usage
 
 1. In App level build.gradle 
-```
+```Gradle
 dataBinding {
         enabled true
 }
 ```
 2. In Activity/Fragment (Java)
-```
+```Java
  mDataBinding.recylerview.setAdapter(new GenericAdapter<PeopleModel, ListitemMainBinding>(this, arrayList) {
             @Override
             public int getLayoutResId() {
@@ -74,7 +78,7 @@ dataBinding {
         });
 ```
 3. In Activity/Fragment (Kotlin)
-```
+```Java
  var adapter = object : GenericAdapter<PeopleModel, ListitemMainBinding>(this, arrayList) {
             override fun getLayoutResId(): Int {
                 return R.layout.listitem_main
@@ -94,6 +98,50 @@ dataBinding.recyclerview.layoutManager = LinearLayoutManager(this, RecyclerView.
 dataBinding.recyclerview.adapter = adapter
 
 ```
+
+# v1.2
+Added list filtering capability to genericAdapter
+
+Sample code of adapter with filter
+```Java
+mDataBinding.recylerview.setAdapter(new GenericFilterAdapter<PeopleModel, ListitemMainBinding>(this, arrayList) {
+            @Override
+            public int getLayoutResId() {
+                return R.layout.listitem_main;
+            }
+
+            @Override
+            public void onBindData(PeopleModel model, int position, ListitemMainBinding dataBinding) {
+                dataBinding.txtName.setText(model.getName());
+                dataBinding.txtAddress.setText(model.getAddress());
+            }
+
+            @Override
+            public void onItemClick(PeopleModel model, int position) {
+
+            }
+
+            @Override
+            public View getSearchField() {
+                return mDataBinding.edtSearch;
+            }
+
+            @Override
+            public ArrayList<PeopleModel> performFilter(String searchText, ArrayList<PeopleModel> originalList) {
+                ArrayList<PeopleModel> filteredList = new ArrayList<>();
+                for (PeopleModel row : originalList) {
+                    if (row.getName().toLowerCase().contains(searchText.toLowerCase()) 
+		    		|| row.getName().contains(searchText) 
+				|| row.getAddress().toLowerCase().contains(searchText.toLowerCase())) {
+                        filteredList.add(row);
+                    }
+                }
+
+                return filteredList;
+            }
+        });
+```
+
 
 # Bugs or Requests
 
