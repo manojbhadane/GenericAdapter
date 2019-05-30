@@ -42,6 +42,7 @@ public abstract class GenericFilterAdapter<T, D> extends RecyclerView.Adapter<Re
 
     public abstract ArrayList<T> performFilter(String searchText, ArrayList<T> originalList);
 
+
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         ViewDataBinding dataBinding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), getLayoutResId(), parent, false);
